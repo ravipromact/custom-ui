@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <form  class="card p-3" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+        <div class="form-group row">
+          <div class="col-md-6 col-12">
+            <h4>Color</h4>
+            <label for="primaryColor">Primary Color</label>
+            <input type="text" class="form-control" formControlName="primaryColor"> 
+            <label for="secondaryColor" class="mt-2">Secondary Color</label>
+            <input type="text" class="form-control" formControlName="secondaryColor">
+            <div formGroupName="buttons">
+              <h4 class="mt-2">Button</h4>
+              <label for="primaryColor">Text Color</label>
+              <input type="text" class="form-control" formControlName="btnColor"> 
+              <label for="secondaryColor" class="mt-2">Background Color</label>
+              <input type="text" class="form-control" formControlName="btnBgColor">
+              <label for="secondaryColor" class="mt-2">Background Color on hover</label>
+              <input type="text" class="form-control" formControlName="btnHoverColor">
+              <label for="secondaryColor" class="mt-2">Border color</label>
+              <input type="text" class="form-control" formControlName="btnBorderColor">
+              <label for="secondaryColor" class="mt-2">Border radius</label>
+              <input type="text" class="form-control" formControlName="btnRadius">
+            </div>
+            <div formGroupName="textfields">
+              <h4 class="mt-2">Textbox</h4>
+              <label for="primaryColor">Text Color</label>
+              <input type="text" class="form-control" formControlName="txtColor">                    
+              <label for="secondaryColor" class="mt-2">Border color</label>
+              <input type="text" class="form-control" formControlName="txtBorderColor">
+              <label for="secondaryColor" class="mt-2">Border color on focus</label>
+              <input type="text" class="form-control" formControlName="txtBorderColorFocus">
+              <label for="secondaryColor" class="mt-2">Border radius</label>
+              <input type="text" class="form-control" formControlName="txtRadius">
+              <label for="secondaryColor" class="mt-2">Box shadow color</label>
+              <input type="text" class="form-control" formControlName="txtShadow">    
+            </div>
+          </div>
+          <div formGroupName="spacing" class="col-md-6 col-12">
+            <h4>Spacing</h4>
+            <label for="primaryColor">Lineheight</label>
+            <input type="text" class="form-control" formControlName="lineHeight"> 
+            <label for="secondaryColor" class="mt-2">Letter Spacing</label>
+            <input type="text" class="form-control" formControlName="letterSpace" >
+            <label for="secondaryColor" class="mt-2">Word Spacing</label>
+            <input type="text" class="form-control" formControlName="wordSpace">
+          </div>       
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <h3 >This it the Main Heading</h3>
+      <p class="secondary-color">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <button class="btn btn-primary">Sample Btn</button>
+      <div class="custom-control custom-radio mt-2">
+        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+        <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+      </div>
+      <div class="custom-control custom-radio">
+        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+        <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="customCheck1">
+        <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+      </div>
+      <small class="form-text text-muted">Checkbox & radio buttons color are based on primary color selection</small>
+    </div>
+  </div>
+  
+</div>

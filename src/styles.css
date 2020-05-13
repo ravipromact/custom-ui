@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    color: #000000;
+    font-size: 16px;
+}
+/* Variables */
+:root { 
+    --primary-color: #007bff; 
+    --secondary-color: #2c2c2c; 
+    --line-height: 24px; 
+    --btn-radius: 4px; 
+    --btn-color:#ffffff;
+    --btn-bg-color:#007bff;
+    --btn-hover-color:#0069d9;
+    --btn-border-color:#007bff;
+    --txtbox-color:#495057;
+    --txtbox-border:#ced4da;
+    --txtbox-border-focus:#80bdff;
+    --txtbox-shadow:rgba(0,123,255,.25);
+    --txtbox-radius: 4px; 
+    --letter-space:0px;
+    --word-space:0px;
+}
+.navbar{background-color:var(--primary-color);}
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-brand {color: var(--btn-color)}
+.primary-color,h1,h2,h3,h4,h5,h6{color:var(--primary-color);}
+.secondary-color{color: var(--secondary-color);}
+/* p{line-height: var(--line-height);} */
+/* Text Spacing */
+*{
+    letter-spacing: var(--letter-space);
+    line-height: var(--line-height);
+    word-spacing: var(--word-space)
+}
+/* Buttons */
+.btn-primary{color: var(--btn-color);background-color:var(--primary-color);border:1px solid var(--primary-color);border-radius: var(--btn-radius);}
+.btn-primary:hover,.btn-primary.focus, .btn-primary:focus,
+.btn-primary:not(:disabled):not(.disabled):active{background-color:var(--btn-hover-color);color: var(--btn-color)}
+
+/* Textbox */
+.form-control{color: var(--txtbox-color);border:1px solid var(--txtbox-border);border-radius: var(--txtbox-radius);}
+.form-control:focus {
+    border-color: var(--txtbox-border-focus);
+    box-shadow: 0 0 0 0.2rem var(--txtbox-shadow);
+}
+
+/* Radio buttons & checkbox */
+.custom-control-input:checked~.custom-control-label::before {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+}
+.custom-control-label::before {
+    border: #adb5bd solid 1px;
+}
+/* .custom-control-input:focus~.custom-control-label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+} */

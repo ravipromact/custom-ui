@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\node_modules\\jquery",
+    "\\node_modules\\jquery\\dist",
+    "\\src",
+    "\\src\\app"
+  ],
+  "SelectedNode": "\\src\\app\\app.directive.ts",
+  "PreviewInSolutionExplorer": false
+}
